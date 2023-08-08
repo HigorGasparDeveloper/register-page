@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.app {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 600px;
+    max-width: 1366px;
+    padding: 0 32px;
+    margin: 80px auto 100px;
+}
+
+.form-app {
+    height: 550px;
+    border: 1px solid rgb(71, 158, 147);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 10px 0 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.form-header {
+    height: 100px;
+}
+
+.text-header {
+    font-weight: bold;
+}
+
+.form-body {
+    height: 280px;
+}
+
+.shape-input {
+    height: 50px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+}
+
+.w-48 {
+    width: 48%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.shape-input:not(:nth-child(1)), .shape-input:not(:nth-child(2)) {
+    margin-top: 35px;
+}
+
+.form-input {
+    border: none;
+    height: 50px;
+    width: 80%;
+    margin-left: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    color: #fff;
+}
+
+
+.form-input::placeholder {
+    color: #fff;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-options {
+    width: 85%;
+    margin-top: 20px;
+    font-size: 18;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(30, 94, 85);
+    font-weight: bold;
+}
+
+.form-footer {
+    height: 120px;
+}
+
+.form-footer-button {
+    margin-top: 10px;
+    width: 85%;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    font-size: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    color: rgb(71, 158, 147);
+    transition-duration: 0.3s;
+}
+
+.form-footer-button:hover {
+    background-color: rgb(71, 158, 147);
+    color: #fff;
+    border:1px solid #fff;
+}
+
+.form-footer label {
+    margin-top: 20px;
+    font-size: 18px;
+}
