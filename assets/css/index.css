@@ -143,6 +143,23 @@ a {
     font-size: 18px;
 }
 
+.form-body::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem vertical */
+}
+
+.form-body::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Cor do indicador de rolagem */
+    border-radius: 3px; /* Borda arredondada do indicador */
+}
+
+.form-body::-webkit-scrollbar-thumb:hover {
+    background-color: #999; /* Cor do indicador de rolagem quando hover */
+}
+
+.form-body::-webkit-scrollbar-track {
+    background-color: transparent; /* Cor da área de fundo da barra de rolagem */
+}
+
 /* Responsive Layout */
 @media (max-width: 595px)
 {
@@ -162,13 +179,11 @@ a {
     .shape-input {
         width: 100%!important;
     }
-    
-    .form-app {
-        height: auto;
-    }
 
     .form-body {
-        height: 550px;
+        max-height: 500px;
+        overflow-y: scroll;
+        padding: 10px;
     }
 
     .form-input {
